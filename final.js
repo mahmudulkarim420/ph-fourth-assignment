@@ -103,8 +103,6 @@ function resultReport(marks){
 
     if(isNaN(finalScore)){
         finalScore = 0;
-    }else{
-        Math.round(finalScore)
     }
 
     return {finalScore, pass, fail};
