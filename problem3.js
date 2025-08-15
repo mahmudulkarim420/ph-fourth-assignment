@@ -1,5 +1,6 @@
 function bestTeam(player1, player2){
-    if(typeof player1 !== "object" || typeof player2 !== "object"){
+    if(typeof player1 !== "object" || Array.isArray(player1) || typeof player2 !== "object" ||  Array.isArray(player2)){
+
         return "Invalid";
     }
 
